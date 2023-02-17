@@ -1,0 +1,73 @@
+print('Hey there! Can I tell you a story? Please? Oh,  silly me. I am sorry, where are my manners? Here let me start over.')
+print('Hello, my name is Katherine, and I have a story about a young mage needing your help making a few choices. Please get comfy.')
+print('First lets start with a few questions. For starters, your name.')
+user = input('\nWhat is your name? Please type your name here and press the Enter key when you are done:  ')
+while len(user) == 0:
+	user = input('Name cannot be blank! Please enter your name:  ')	
+
+if user.lower() == "professor quigley":
+	print(f'\nOh! Hello Professor! I really hope you like our story! I just have a few more questions to ask you before we get started.')
+else:
+	print('\nNice to make your acquaintance {user}! I’m so happy you’re here! Now, just a few more questions, and remember to press Enter when done typing.')
+
+keepGoing = "y"
+while keepGoing == "y":
+    name = input('\nWhat is the young mages name? Please type your answer here:  ')
+    while len(name) == 0:
+        name = input('Name cannot be blank! Please enter a name for the mage:  ')
+     
+    friend = input('\nWhat is your best friends name? Type their name here:  ')
+    while len(friend) == 0:
+        friend = input('Friend needs a name and cannot be blank! Please give the friend a name:  ')
+
+    place = input('\nWhere is a good place to hide? Go on ahead and type that answer here:  ')
+    while len(place) == 0:
+        place = input('We need to know where to hide if something happens. So, this cannot be blank! Please tell us a good place to hide:  ')
+
+    color = input('\nWhat is your favorite color? You know what to do here:  ')
+    while len(color) == 0:
+        color = input('Oh, Now come on! Everyone has some color they like. Any color you want. Leave no question blank! Please enter a color:  ')
+
+    number = input('\nWhat is your lucky number? Type that lucky number here:  ')
+    while not number.isdigit():
+        number = input('\nValue not recognized. Please enter a numeric value:  ')
+    number = int(number)
+    print('\nAwesome answers! These will give our story great details. Now let’s go check out our story! Press Enter when your ready to start.')
+    print(f'\nOnce upon a time, in a land not much different from your home, lived a young mage whose name was {name}.')
+    print(f'\nThis morning the young mage got up and got ready for school like every other day, but with one slight difference. {name} woke up in the form of an animal.')
+    print(f'\nThen {name} said, Well this is new, and shaking like an animal to get water off their fur, the young mage turned back to human form and finished getting ready for school then headed out.')
+
+    keepGoing = input('Do you want to read again? You can always make different choices than you did before. Enter y to start the story n to exit:  ')
+    if keepGoing == "y":
+        print(keepGoing)
+    else:
+        print(f'\nThank you for helping me with the story. I hope you enjoyed reading about the adventures of the young mage {name} and {friend}!')
+        print(f'\nI hope to see you again soon and we can make another adventure together!')
+        print(f'\nWell {user}, I guess this is, goodbye for now!')
+        print()
+        print(f"         **********************        %%%%%%                  %%%%%%    ################         @@@@@")                                                                                                      
+        print(f"         *                      *       %    %                %    %     #		          #        @     @")                                                           
+        print(f"         *                       *       %    %              %    %      #		          #        @     @")                                                        
+        print(f"         *    ****************    *       %    %            %    %       #	            #        @     @")
+        print(f"         *    *               *   *        %    %          %    %        #	  ###########        @     @") 	                                                    
+        print(f"         *    *               *   *         %    %        %    %         #	  #                  @     @")                               
+        print(f"         *    *               *   *          %    %      %    %          #	  #                  @     @")                                        
+        print(f"         *    *               *   *           %    %    %    &           # 	  #		               @     @")
+        print(f"         *    * ** * ** * ** *    *            %    % %     %            #	  ###########        @     @") 
+        print(f"         *                      *               %    %     % 	           #		          #	       @     @")
+        print(f"         *                  * *                  %        %              #		          #        @     @")                    
+        print(f"         *                      *                 %      %               #		          #        @     @")                             
+        print(f"         *    * ** * ** * ** *    *               %      %               #       ########         @   @")                                          
+        print(f"         *    *                *   *              %      %               #       #                  @")                            
+        print(f"         *    *                *   *              %      %               #       #")                                             
+        print(f"         *    *                *   *              %      %               #       #")
+        print(f"         *    *                *   *              %      %               #       #########       @@@@@")                                    
+        print(f"         *    *****************    *              %      %               #               #      @     @")                          
+        print(f"         *                         *              %      %               #               #     @       @")               
+        print(f"         *                        *               %      %  	           #	  	         #      @     @")
+        print(f"         *********************** *                %%%%%%%%               #################       @@@@@")
+
+
+
+
+ 
